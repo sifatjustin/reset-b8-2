@@ -84,7 +84,37 @@
      border-radius: 3px;
  }
 
- @media only screen and (max-width: 560px) {}
+ /* =====
+=====
+====
+==== Media query
+=====
+========= */
+
+
+ @media only screen and (max-width: 560px) {
+
+     nav {
+         width: 90%;
+         margin: 50px auto;
+         display: flex;
+         flex-direction: column;
+     }
+
+     nav .nav-items ul {
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+         padding-top: 20px;
+
+     }
+
+     nav .navlogo h3 {
+         font-size: 26px;
+         font-weight: 800;
+         line-height: 35px;
+     }
+ }
 
 
 
@@ -186,8 +216,67 @@ banner section starts here
      letter-spacing: 0%;
  }
 
+ /* =====
+=====
+====
+==== Media query
+=====
+========= */
+
+ @media only screen and (max-width: 560px) {
+     .hero_banner {
+         width: 90%;
+         margin: 50px auto 0px;
+     }
+
+     .hero_banner .hero_main {
+         background-position: 50%;
+
+     }
+
+     .hero_banner .hero_main h1 {
+         font-family: Mulish;
+         font-size: 22px;
+         font-weight: 800;
+         line-height: 28px;
+         padding-top: 50px;
+     }
 
 
+     .hero_banner .hero_main p {
+         font-size: 14px;
+         font-weight: 400;
+         line-height: 21px;
+     }
+
+     .hero_banner .hero_main .hero_form {
+
+         width: 90%;
+         padding-bottom: 40px;
+     }
+
+     .hero_banner .hero_main form {
+         display: flex;
+         flex-direction: column;
+
+     }
+
+     .hero_banner .hero_main form .text,
+     .when,
+     .type,
+     .search {
+         width: 100%;
+     }
+
+     .hero_banner .hero_main form .search {
+         display: flex;
+         justify-content: center;
+         gap: 10px;
+         align-items: center;
+
+     }
+
+ }
 
 
  /* =====
@@ -257,6 +346,38 @@ video section ends
 
 
  /* =====
+=====
+====
+==== Media query
+=====
+========= */
+
+ @media only screen and (max-width: 560px) {
+     .popular_banner {
+         width: 90%;
+         margin: 50px auto;
+     }
+
+     .popular_banner .popular_tours {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .popular_banner .popular_tours img {
+         width: 100%;
+         margin: 0px auto;
+     }
+ }
+
+
+
+
+
+
+
+
+ /* =====
  ======
  deals and discount starts
  ========
@@ -311,17 +432,18 @@ video section ends
      border-radius: 16px;
      backdrop-filter: blur(5px);
      background: rgba(255, 255, 255, 0.8);
-     
+
      width: 60%;
      max-width: 580px;
      padding: 50px;
  }
- .deals_discount .deals_info .deals_card .right{
-    position: absolute;
-    top: 56px;
-    right: 86px;
+
+ .deals_discount .deals_info .deals_card .right {
+     position: absolute;
+     top: 56px;
+     right: 86px;
  }
- 
+
 
  .deals_discount .deals_info .deals_card .card_absoulute h3 {
      color: rgb(19, 19, 24);
@@ -388,16 +510,93 @@ video section ends
 
 
 
- .deals_discount .deals_info .deals_card .left{
-    position: absolute;
-    top: 56px;
-    left: 86px;
+ .deals_discount .deals_info .deals_card .left {
+     position: absolute;
+     top: 56px;
+     left: 86px;
+ }
+
+
+ /* =====
+=====
+====
+==== Media query
+=====
+========= */
+
+ @media only screen and (max-width: 560px) {
+
+     .deals_banner {
+         width: 90%;
+         margin: 50px auto;
+     }
+
+     .deals_discount .deals_text h2 {
+         font-size: 20px;
+         line-height: 25px;
+
+     }
+
+     .deals_discount .deals_text p {
+         font-size: 14px;
+         line-height: 24px;
+         width: 85%;
+         margin: 0 auto;
+
+     }
+
+     .deals_discount .deals_info .deals_card .card_absoulute {
+         width: 80%;
+         margin: 0 auto;
+         padding: 20px;
+     }
+
+     .deals_discount .deals_info .deals_card .right {
+         position: absolute;
+         top: 111px;
+         right: 40px;
+     }
+
+     .deals_discount .deals_info .deals_card .card_info {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         gap: 10px;
+     }
+
+
+     .deals_discount .deals_info .deals_card img {
+         width: 100%;
+         height: 600px;
+         object-fit: cover;
+         background-position: 50%;
+         border-radius: 10px;
+     }
+
+     .deals_discount .deals_info .deals_card .card_info .card_text p {
+         font-size: 14px;
+         font-weight: 400;
+         line-height: 24px;
+
+
+     }
+
+     .deals_discount .deals_info .deals_card .left {
+         position: absolute;
+         top: 133px;
+         left: 37px;
+ }
+
+ .deals_discount .deals_info .deals_card .card_info .card_text {
+     display: flex;
+     gap: 10px;
+     padding: 0;
  }
 
 
 
-
-
+ }
 
 
 
