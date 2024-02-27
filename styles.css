@@ -488,7 +488,7 @@ video section ends
  .deals_discount .deals_info .deals_card .card_info .card_text {
      display: flex;
      justify-content: space-between;
-     align-items: center;
+     /* align-items: center; */
      gap: 10px;
      padding-bottom: 20px;
 
@@ -586,21 +586,17 @@ video section ends
          position: absolute;
          top: 133px;
          left: 37px;
+     }
+
+     .deals_discount .deals_info .deals_card .card_info .card_text {
+         display: flex;
+         gap: 10px;
+         padding: 0;
+     }
+
+
+
  }
-
- .deals_discount .deals_info .deals_card .card_info .card_text {
-     display: flex;
-     gap: 10px;
-     padding: 0;
- }
-
-
-
- }
-
-
-
-
 
 
 
@@ -654,6 +650,61 @@ video section ends
  .video_banner .video_tours .video_text ul li {
      padding-top: 20px;
  }
+
+
+
+
+ /* =====
+=====
+====
+==== Media query
+=====
+========= */
+
+ @media only screen and (max-width: 560px) {
+     .video_banner {
+         width: 90%;
+         margin: 50px auto;
+     }
+
+     .video_banner .video_tours {
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+     }
+
+     .video_banner .video_tours .video_text h3 {
+         font-size: 24px;
+         font-weight: 800;
+         line-height: 30px;
+         padding-bottom: 10px;
+     }
+
+     .video_banner .video_tours .video_text p {
+         font-size: 14px;
+         font-weight: 400;
+         line-height: 26px;
+ 
+
+ }
+ .video_banner .video_tours .video_text ul {
+  
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+}
+.video_banner .video_tours .video_img img {
+    width: 100%;
+    max-width: 530px;
+    margin: 0 auto;
+}
+}
+
+
+
+
+
+
 
 
  /* ======
@@ -785,7 +836,31 @@ Newslater section
 
 
 
+ /* =====
+=====
+====
+==== Media query
+=====
+========= */
 
+@media only screen and (max-width: 560px){
+    .newslater_banner {
+        width: 90%;
+        margin: 50px auto;
+    }
+    .newslater_banner .newslater_main {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        gap: 40px;
+    }
+    .newslater_banner .newslater_main .news_img img{
+        width: 100%;
+        max-width: 550px;
+        margin: 0 auto;
+    }
+}
 
 
 
