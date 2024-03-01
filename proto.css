@@ -1,0 +1,35 @@
+body{
+    width: 1200px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.row .first {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.row .second {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.row .third {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.pic img {
+    width: 300px;
+    height: auto;
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+}

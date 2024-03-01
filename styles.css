@@ -159,6 +159,9 @@ banner section starts here
      letter-spacing: 0%;
      text-align: center;
      padding-top: 24px;
+     width: 80%;
+     max-width:600px ;
+     margin: auto;
  }
 
  .hero_banner .hero_main .hero_form {
@@ -553,8 +556,8 @@ video section ends
 
      .deals_discount .deals_info .deals_card .right {
          position: absolute;
-         top: 111px;
-         right: 40px;
+         top: 215px;
+        left: 37px;
      }
 
      .deals_discount .deals_info .deals_card .card_info {
@@ -581,11 +584,14 @@ video section ends
 
 
      }
+     .deals_discount .deals_info .deals_card  p span {
+        display: none;
+     }
 
      .deals_discount .deals_info .deals_card .left {
-         position: absolute;
-         top: 133px;
-         left: 37px;
+        position: absolute;
+        top: 215px;
+        left: 37px;
      }
 
      .deals_discount .deals_info .deals_card .card_info .card_text {
@@ -684,21 +690,23 @@ video section ends
          font-size: 14px;
          font-weight: 400;
          line-height: 26px;
- 
 
+
+     }
+
+     .video_banner .video_tours .video_text ul {
+
+         font-size: 14px;
+         font-weight: 600;
+         line-height: 26px;
+     }
+
+     .video_banner .video_tours .video_img img {
+         width: 100%;
+         max-width: 530px;
+         margin: 0 auto;
+     }
  }
- .video_banner .video_tours .video_text ul {
-  
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 26px;
-}
-.video_banner .video_tours .video_img img {
-    width: 100%;
-    max-width: 530px;
-    margin: 0 auto;
-}
-}
 
 
 
@@ -843,24 +851,48 @@ Newslater section
 =====
 ========= */
 
-@media only screen and (max-width: 560px){
-    .newslater_banner {
-        width: 90%;
-        margin: 50px auto;
+ @media only screen and (max-width: 560px) {
+     .newslater_banner {
+         width: 90%;
+         margin: 50px auto;
+     }
+
+     .newslater_banner .newslater_main {
+         display: flex;
+         flex-direction: column;
+         position: relative;
+         z-index: 1;
+         gap: 40px;
+     }
+
+     .newslater_banner .newslater_main .news_img img {
+         width: 100%;
+         max-width: 550px;
+         margin: 0 auto;
+     }
+
+     .newslater_banner .newslater_main .news_img .discount {
+        position: absolute;
+        transform: rotate(-19.63deg);
+        border-radius: 10px;
+        background: rgb(255, 84, 0);
+        z-index: 11;
+        padding: 15px 25px;
+        right: 4px;
+        bottom: 36px;
     }
-    .newslater_banner .newslater_main {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        z-index: 1;
-        gap: 40px;
+     }
+
+     .newslater_banner .newslater_main .news_img .discount p {
+        font-size: 15.85px;
+        line-height: 20px;
+     }
+     .newslater_banner .newslater_main .news_img .discount h3 {
+        font-size: 21.14px;
+        line-height: 27px;
+    
     }
-    .newslater_banner .newslater_main .news_img img{
-        width: 100%;
-        max-width: 550px;
-        margin: 0 auto;
-    }
-}
+ 
 
 
 
@@ -970,7 +1002,14 @@ Newslater section
          width: 25px;
          height: auto;
      }
-
+     .footer_social {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        text-align: center;
+        padding: 20px 0px 0 0;
+    }
+   
      footer hr {
          border: 1px solid rgba(19, 19, 24, 0.1);
          width: 75%;
