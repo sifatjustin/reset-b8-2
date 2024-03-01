@@ -418,9 +418,27 @@ video section ends
 
 
 
- .destination .destination_photo .row_one,
- .row_two,
- .row_three {
+ .destination .destination_photo .row_one {
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     margin-top: 20px;
+
+ }
+
+ .destination .destination_photo .row_two {
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     margin-top: 20px;
+
+ }
+
+ .destination .destination_photo .row_three {
 
      display: flex;
      justify-content: center;
@@ -452,7 +470,7 @@ video section ends
      position: relative;
  }
 
- .destination .destination_photo .row_two .middile >.one {
+ .destination .destination_photo .row_two .middile>.one {
      position: absolute;
      top: 136px;
      right: 120px;
@@ -465,7 +483,8 @@ video section ends
      letter-spacing: 0%;
 
  }
- .destination .destination_photo .row_two .middile >.two {
+
+ .destination .destination_photo .row_two .middile>.two {
      position: absolute;
      top: 136px;
      right: 140px;
@@ -478,7 +497,8 @@ video section ends
      letter-spacing: 0%;
 
  }
- .destination .destination_photo .row_two .middile >.three {
+
+ .destination .destination_photo .row_two .middile>.three {
      position: absolute;
      top: 136px;
      right: 80px;
@@ -497,20 +517,7 @@ video section ends
  }
 
 
- /* .destination .destination_photo .row_three .middile  {
-     position: absolute;
-     top: 136px;
-     right: 221px;
-     text-align: center;
-     color: rgb(255, 255, 255);
-     font-family: Mulish;
-     font-size: 28px;
-     font-weight: 800;
-     line-height: 35px;
-     letter-spacing: 0%;
-
- } */
- .destination .destination_photo .row_three .middile .one p {
+ .destination .destination_photo .row_three .middile>.one {
      position: absolute;
      top: 136px;
      right: 150px;
@@ -524,11 +531,10 @@ video section ends
 
  }
 
-
- /* .destination .destination_photo .row_three .middile p {
+ .destination .destination_photo .row_three .middile>.two {
      position: absolute;
-     top: 136px;
-     right: 221px;
+     top: 45%;
+     right: 38%;
      text-align: center;
      color: rgb(255, 255, 255);
      font-family: Mulish;
@@ -536,337 +542,462 @@ video section ends
      font-weight: 800;
      line-height: 35px;
      letter-spacing: 0%;
+ }
 
- } */
 
- /* =====
+
+ @media only screen and (max-width: 560px) {
+     .destination {
+         width: 90%;
+         margin: 50px auto;
+     }
+
+     .destination .destination_text {
+         width: 90%;
+     }
+
+     .destination .destination_text h2 {
+
+         font-size: 20px;
+         font-weight: 800;
+         line-height: 25px;
+     }
+
+     .destination .destination_text p {
+
+         font-size: 14px;
+         font-weight: 400;
+         line-height: 24px;
+     }
+
+     .destination .destination_photo .row_one {
+
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+         margin-top: 20px;
+
+     }
+
+     .destination .destination_photo .row_one .middile img {
+         width: 335px;
+         height: 176px;
+     }
+
+     .destination .destination_photo .row_one .middile p {
+         top: 85px;
+         right: 121px;
+         font-size: 22px;
+         font-weight: 800;
+         line-height: 5px;
+
+
+     }
+
+     .destination .destination_photo .row_two {
+
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+         margin-top: 20px;
+
+     }
+
+     .destination .destination_photo .row_two .middile img {
+         width: 335px;
+         height: 176px;
+     }
+
+     .destination .destination_photo .row_two .middile>.two {
+         top: 85px;
+         right: 90px;
+         font-size: 22px;
+         font-weight: 800;
+         line-height: 5px;
+
+     }
+
+     .destination .destination_photo .row_two .middile>.three {
+         top: 85px;
+         right: 121px;
+         font-size: 22px;
+         font-weight: 800;
+         line-height: 5px;
+
+     }
+
+     .destination .destination_photo .row_two .middile>.one {
+         top: 85px;
+         right: 121px;
+         font-size: 22px;
+         font-weight: 800;
+         line-height: 5px;
+
+     }
+
+     .destination .destination_photo .row_three {
+
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+         margin-top: 20px;
+
+     }
+
+     .destination .destination_photo .row_three .middile img {
+         width: 335px;
+         height: 176px;
+     }
+
+     .destination .destination_photo .row_three .middile>.one {
+         top: 85px;
+         right: 95px;
+         font-size: 22px;
+         font-weight: 800;
+         line-height: 5px;
+
+     }
+     .destination .destination_photo .row_three .middile>.two {
+         top: 85px;
+         right: 105px;
+         font-size: 22px;
+         font-weight: 800;
+         line-height: 5px;
+
+     }
+
+
+
+     /* =====
  ======
  deals and discount starts
  ========
  ======
  */
 
- .deals_banner {
-     width: 80%;
-     max-width: 1200px;
-     margin: 100px auto;
- }
-
-
- .deals_discount .deals_text h2 {
-     color: rgb(19, 19, 24);
-     font-family: Mulish;
-     font-size: 40px;
-     font-weight: 800;
-     line-height: 50px;
-     letter-spacing: 5%;
-     text-align: center;
-     padding-bottom: 25px;
- }
-
- .deals_discount .deals_text p {
-     color: rgba(19, 19, 24, 0.7);
-     font-family: Mulish;
-     font-size: 16px;
-     font-weight: 400;
-     line-height: 26px;
-     letter-spacing: 5%;
-     text-align: center;
-     padding-bottom: 25px;
- }
-
- .deals_discount .deals_info .first,
- .second {
-     padding-bottom: 30px;
- }
-
- .deals_discount .deals_info .deals_card {
-     position: relative;
- }
-
- .deals_discount .deals_info .deals_card img {
-     margin: 0 auto;
- }
-
- .deals_discount .deals_info .deals_card .card_absoulute {
-     box-sizing: border-box;
-     border: 2px solid rgb(255, 255, 255);
-     border-radius: 16px;
-     backdrop-filter: blur(5px);
-     background: rgba(255, 255, 255, 0.8);
-
-     width: 60%;
-     max-width: 580px;
-     padding: 50px;
- }
-
- .deals_discount .deals_info .deals_card .right {
-     position: absolute;
-     top: 56px;
-     right: 86px;
- }
-
-
- .deals_discount .deals_info .deals_card .card_absoulute h3 {
-     color: rgb(19, 19, 24);
-     font-family: Mulish;
-     font-size: 24px;
-     font-weight: 800;
-     line-height: 30px;
-     letter-spacing: 0%;
-     text-align: left;
-     padding-bottom: 10px;
- }
-
- .deals_discount .deals_info .deals_card .card_absoulute p {
-     color: rgb(90, 90, 93);
-     font-family: Mulish;
-     font-size: 16px;
-     font-weight: 400;
-     line-height: 26px;
-     letter-spacing: 0%;
-     text-align: left;
-     padding-bottom: 10px;
- }
-
- .deals_discount .deals_info .deals_card .card_absoulute h4 {
-     color: rgb(255, 84, 0);
-     font-family: Mulish;
-     font-size: 20px;
-     font-weight: 800;
-     line-height: 25px;
-     letter-spacing: 0%;
-     text-align: left;
-     /* padding-bottom: 10px; */
- }
-
- .deals_discount .deals_info .deals_card .card_info {
-     display: flex;
-     justify-content: start;
-     align-items: center;
-     gap: 25px;
- }
-
- .deals_discount .deals_info .deals_card .card_info .card_text {
-     display: flex;
-     justify-content: space-between;
-     /* align-items: center; */
-     gap: 10px;
-     padding-bottom: 20px;
-
- }
-
- .deals_discount .deals_info .deals_card .card_info .card_text i {
-     color: red;
- }
-
- .deals_discount .deals_info .deals_card .card_info .card_text p {
-     color: rgb(90, 90, 93);
-     font-family: Mulish;
-     font-size: 16px;
-     font-weight: 400;
-     line-height: 20px;
-     letter-spacing: 0%;
-     text-align: left;
- }
-
-
-
- .deals_discount .deals_info .deals_card .left {
-     position: absolute;
-     top: 56px;
-     left: 86px;
- }
-
-
- /* =====
-=====
-====
-==== Media query
-=====
-========= */
-
- @media only screen and (max-width: 560px) {
-
      .deals_banner {
-         width: 90%;
-         margin: 50px auto;
+         width: 80%;
+         max-width: 1200px;
+         margin: 100px auto;
      }
 
-     .deals_discount .deals_text h2 {
-         font-size: 20px;
-         line-height: 25px;
 
+     .deals_discount .deals_text h2 {
+         color: rgb(19, 19, 24);
+         font-family: Mulish;
+         font-size: 40px;
+         font-weight: 800;
+         line-height: 50px;
+         letter-spacing: 5%;
+         text-align: center;
+         padding-bottom: 25px;
      }
 
      .deals_discount .deals_text p {
-         font-size: 14px;
-         line-height: 24px;
-         width: 85%;
-         margin: 0 auto;
+         color: rgba(19, 19, 24, 0.7);
+         font-family: Mulish;
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 26px;
+         letter-spacing: 5%;
+         text-align: center;
+         padding-bottom: 25px;
+     }
 
+     .deals_discount .deals_info .first,
+     .second {
+         padding-bottom: 30px;
+     }
+
+     .deals_discount .deals_info .deals_card {
+         position: relative;
+     }
+
+     .deals_discount .deals_info .deals_card img {
+         margin: 0 auto;
+         width: 100%;
+         max-width: 1170;
      }
 
      .deals_discount .deals_info .deals_card .card_absoulute {
-         width: 80%;
-         margin: 0 auto;
-         padding: 20px;
+         box-sizing: border-box;
+         border: 2px solid rgb(255, 255, 255);
+         border-radius: 16px;
+         backdrop-filter: blur(5px);
+         background: rgba(255, 255, 255, 0.8);
+
+         width: 60%;
+         max-width: 580px;
+         padding: 50px;
      }
 
      .deals_discount .deals_info .deals_card .right {
          position: absolute;
-         top: 215px;
-         left: 37px;
+         top: 56px;
+         right: 86px;
+     }
+
+
+     .deals_discount .deals_info .deals_card .card_absoulute h3 {
+         color: rgb(19, 19, 24);
+         font-family: Mulish;
+         font-size: 24px;
+         font-weight: 800;
+         line-height: 30px;
+         letter-spacing: 0%;
+         text-align: left;
+         padding-bottom: 10px;
+     }
+
+     .deals_discount .deals_info .deals_card .card_absoulute p {
+         color: rgb(90, 90, 93);
+         font-family: Mulish;
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 26px;
+         letter-spacing: 0%;
+         text-align: left;
+         padding-bottom: 10px;
+     }
+
+     .deals_discount .deals_info .deals_card .card_absoulute h4 {
+         color: rgb(255, 84, 0);
+         font-family: Mulish;
+         font-size: 20px;
+         font-weight: 800;
+         line-height: 25px;
+         letter-spacing: 0%;
+         text-align: left;
+         /* padding-bottom: 10px; */
      }
 
      .deals_discount .deals_info .deals_card .card_info {
          display: flex;
-         flex-wrap: wrap;
-         justify-content: center;
+         justify-content: start;
          align-items: center;
-         gap: 10px;
-     }
-
-
-     .deals_discount .deals_info .deals_card img {
-         width: 100%;
-         height: 600px;
-         object-fit: cover;
-         background-position: 50%;
-         border-radius: 10px;
-     }
-
-     .deals_discount .deals_info .deals_card .card_info .card_text p {
-         font-size: 14px;
-         font-weight: 400;
-         line-height: 24px;
-
-
-     }
-
-     .deals_discount .deals_info .deals_card p span {
-         display: none;
-     }
-
-     .deals_discount .deals_info .deals_card .left {
-         position: absolute;
-         top: 215px;
-         left: 37px;
+         gap: 25px;
      }
 
      .deals_discount .deals_info .deals_card .card_info .card_text {
          display: flex;
+         justify-content: space-between;
+         /* align-items: center; */
          gap: 10px;
-         padding: 0;
+         padding-bottom: 20px;
+
+     }
+
+     .deals_discount .deals_info .deals_card .card_info .card_text i {
+         color: red;
+     }
+
+     .deals_discount .deals_info .deals_card .card_info .card_text p {
+         color: rgb(90, 90, 93);
+         font-family: Mulish;
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 20px;
+         letter-spacing: 0%;
+         text-align: left;
      }
 
 
 
- }
+     .deals_discount .deals_info .deals_card .left {
+         position: absolute;
+         top: 56px;
+         left: 86px;
+     }
 
 
-
- .video_banner {
-     width: 80%;
-     max-width: 1200px;
-     margin: 100px auto;
- }
-
- .video_banner .video_tours {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     gap: 50px;
- }
-
- .video_banner .video_tours .video_text h3 {
-     color: rgb(19, 19, 24);
-     font-family: Mulish;
-     font-size: 40px;
-     font-weight: 800;
-     line-height: 50px;
-     letter-spacing: 0%;
-     text-align: start;
-     padding-bottom: 20px;
- }
-
- .video_banner .video_tours .video_text p {
-     color: rgba(19, 19, 24, 0.7);
-     font-family: Mulish;
-     font-size: 16px;
-     font-weight: 400;
-     line-height: 26px;
-     letter-spacing: 0%;
-     text-align: left;
- }
-
-
- .video_banner .video_tours .video_text ul {
-     color: rgb(19, 19, 24);
-     font-family: Mulish;
-     font-size: 16px;
-     font-weight: 700;
-     line-height: 26px;
-     letter-spacing: 0%;
-     text-align: left;
-     padding: 0px 0px 20px 20px;
-
- }
-
- .video_banner .video_tours .video_text ul li {
-     padding-top: 20px;
- }
-
-
-
-
- /* =====
+     /* =====
 =====
 ====
 ==== Media query
 =====
 ========= */
 
- @media only screen and (max-width: 560px) {
+     @media only screen and (max-width: 560px) {
+
+         .deals_banner {
+             width: 90%;
+             margin: 50px auto;
+         }
+
+         .deals_discount .deals_text h2 {
+             font-size: 20px;
+             line-height: 25px;
+
+         }
+
+         .deals_discount .deals_text p {
+             font-size: 14px;
+             line-height: 24px;
+             width: 85%;
+             margin: 0 auto;
+
+         }
+
+         .deals_discount .deals_info .deals_card .card_absoulute {
+             width: 80%;
+             margin: 0 auto;
+             padding: 20px;
+         }
+
+         .deals_discount .deals_info .deals_card .right {
+             position: absolute;
+             top: 215px;
+             left: 37px;
+         }
+
+         .deals_discount .deals_info .deals_card .card_info {
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: center;
+             align-items: center;
+             gap: 10px;
+         }
+
+
+         .deals_discount .deals_info .deals_card img {
+             width: 100%;
+             height: 600px;
+             object-fit: cover;
+             background-position: 50%;
+             border-radius: 10px;
+         }
+
+         .deals_discount .deals_info .deals_card .card_info .card_text p {
+             font-size: 14px;
+             font-weight: 400;
+             line-height: 24px;
+
+
+         }
+
+         .deals_discount .deals_info .deals_card p span {
+             display: none;
+         }
+
+         .deals_discount .deals_info .deals_card .left {
+             position: absolute;
+             top: 215px;
+             left: 37px;
+         }
+
+         .deals_discount .deals_info .deals_card .card_info .card_text {
+             display: flex;
+             gap: 10px;
+             padding: 0;
+         }
+
+
+
+     }
+
+
+
      .video_banner {
-         width: 90%;
-         margin: 50px auto;
+         width: 80%;
+         max-width: 1200px;
+         margin: 100px auto;
      }
 
      .video_banner .video_tours {
          display: flex;
-         flex-direction: column;
-         gap: 20px;
+         align-items: center;
+         justify-content: space-between;
+         gap: 50px;
      }
 
      .video_banner .video_tours .video_text h3 {
-         font-size: 24px;
+         color: rgb(19, 19, 24);
+         font-family: Mulish;
+         font-size: 40px;
          font-weight: 800;
-         line-height: 30px;
-         padding-bottom: 10px;
+         line-height: 50px;
+         letter-spacing: 0%;
+         text-align: start;
+         padding-bottom: 20px;
      }
 
      .video_banner .video_tours .video_text p {
-         font-size: 14px;
+         color: rgba(19, 19, 24, 0.7);
+         font-family: Mulish;
+         font-size: 16px;
          font-weight: 400;
          line-height: 26px;
-
-
+         letter-spacing: 0%;
+         text-align: left;
      }
+
 
      .video_banner .video_tours .video_text ul {
-
-         font-size: 14px;
-         font-weight: 600;
+         color: rgb(19, 19, 24);
+         font-family: Mulish;
+         font-size: 16px;
+         font-weight: 700;
          line-height: 26px;
+         letter-spacing: 0%;
+         text-align: left;
+         padding: 0px 0px 20px 20px;
+
      }
 
-     .video_banner .video_tours .video_img img {
-         width: 100%;
-         max-width: 530px;
-         margin: 0 auto;
+     .video_banner .video_tours .video_text ul li {
+         padding-top: 20px;
      }
- }
+
+
+
+
+     /* =====
+=====
+====
+==== Media query
+=====
+========= */
+
+     @media only screen and (max-width: 560px) {
+         .video_banner {
+             width: 90%;
+             margin: 50px auto;
+         }
+
+         .video_banner .video_tours {
+             display: flex;
+             flex-direction: column;
+             gap: 20px;
+         }
+
+         .video_banner .video_tours .video_text h3 {
+             font-size: 24px;
+             font-weight: 800;
+             line-height: 30px;
+             padding-bottom: 10px;
+         }
+
+         .video_banner .video_tours .video_text p {
+             font-size: 14px;
+             font-weight: 400;
+             line-height: 26px;
+
+
+         }
+
+         .video_banner .video_tours .video_text ul {
+
+             font-size: 14px;
+             font-weight: 600;
+             line-height: 26px;
+         }
+
+         .video_banner .video_tours .video_img img {
+             width: 100%;
+             max-width: 530px;
+             margin: 0 auto;
+         }
+     }
 
 
 
@@ -875,7 +1006,7 @@ video section ends
 
 
 
- /* ======
+     /* ======
 =========
 video banner ends
 =========
@@ -883,295 +1014,262 @@ video banner ends
 
 
 
- /* ======
+     /* ======
 =========
 Newslater section
 =========
 ========*/
 
 
- .newslater_banner {
-     width: 80%;
-     max-width: 1200px;
-     margin: 100px auto;
- }
+     .newslater_banner {
+         width: 80%;
+         max-width: 1200px;
+         margin: 100px auto;
+     }
 
- .newslater_banner .newslater_main {
-     display: flex;
-     justify-content: space-between;
-     gap: 30px;
-     align-items: center;
-     position: relative;
-     z-index: 1;
- }
+     .newslater_banner .newslater_main {
+         display: flex;
+         justify-content: space-between;
+         gap: 30px;
+         align-items: center;
+         position: relative;
+         z-index: 1;
+     }
 
- .newslater_banner .newslater_main .news_subs {
-     box-sizing: border-box;
-     border: 1px solid rgb(255, 84, 0);
-     border-radius: 16px;
-     padding: 30px;
- }
+     .newslater_banner .newslater_main .news_subs {
+         box-sizing: border-box;
+         border: 1px solid rgb(255, 84, 0);
+         border-radius: 16px;
+         padding: 30px;
+     }
 
- .newslater_banner .newslater_main .news_subs h4 {
-     color: rgb(19, 19, 24);
-     font-family: Mulish;
-     font-size: 24px;
-     font-weight: 800;
-     line-height: 30px;
-     letter-spacing: 0%;
-     text-align: left;
-     padding-bottom: 16px;
- }
+     .newslater_banner .newslater_main .news_subs h4 {
+         color: rgb(19, 19, 24);
+         font-family: Mulish;
+         font-size: 24px;
+         font-weight: 800;
+         line-height: 30px;
+         letter-spacing: 0%;
+         text-align: left;
+         padding-bottom: 16px;
+     }
 
- .newslater_banner .newslater_main .news_subs p {
-     color: rgb(90, 90, 93);
-     font-family: Mulish;
-     font-size: 16px;
-     font-weight: 400;
-     line-height: 26px;
-     letter-spacing: 0%;
-     text-align: left;
-     /* padding-bottom: 16px; */
- }
+     .newslater_banner .newslater_main .news_subs p {
+         color: rgb(90, 90, 93);
+         font-family: Mulish;
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 26px;
+         letter-spacing: 0%;
+         text-align: left;
+         /* padding-bottom: 16px; */
+     }
 
- .newslater_banner .newslater_main .news_subs .news_input {
-     display: flex;
-     flex-direction: column;
-     gap: 30px;
- }
+     .newslater_banner .newslater_main .news_subs .news_input {
+         display: flex;
+         flex-direction: column;
+         gap: 30px;
+     }
 
- .newslater_banner .newslater_main .news_subs .news_input input {
-     padding: 20px 25px;
-     border-radius: 8px;
-     border: none;
-     background: rgba(19, 19, 24, 0.05);
- }
-
-
- .newslater_banner .newslater_main .news_subs hr {
-     margin: 25px 0;
-     border: 1px solid rgba(19, 19, 24, 0.1);
- }
+     .newslater_banner .newslater_main .news_subs .news_input input {
+         padding: 20px 25px;
+         border-radius: 8px;
+         border: none;
+         background: rgba(19, 19, 24, 0.05);
+     }
 
 
- .newslater_banner .newslater_main .news_subs .news_input .btn {
-     border-radius: 8px;
-     color: rgb(255, 255, 255);
-     font-family: Mulish;
-     font-size: 20px;
-     font-weight: 800;
-     line-height: 25px;
-     letter-spacing: 0%;
-     text-align: center;
-     background: rgb(255, 84, 0);
-     padding: 14px 0;
-     border: none;
- }
+     .newslater_banner .newslater_main .news_subs hr {
+         margin: 25px 0;
+         border: 1px solid rgba(19, 19, 24, 0.1);
+     }
 
 
- .newslater_banner .newslater_main .news_img .discount {
-     position: absolute;
-     transform: rotate(-19.63deg);
-     border-radius: 16px;
-     background: rgb(255, 84, 0);
-     z-index: 11;
-     padding: 20px 30px;
-     right: 6px;
-     bottom: 50px;
- }
-
- .newslater_banner .newslater_main .news_img .discount p {
-     color: rgb(255, 255, 255);
-     font-family: Mulish;
-     font-size: 24px;
-     font-weight: 400;
-     line-height: 30px;
-     letter-spacing: 0%;
-     text-align: center;
- }
-
- .newslater_banner .newslater_main .news_img .discount h3 {
-     color: rgb(255, 255, 255);
-     font-family: Mulish;
-     font-size: 32px;
-     font-weight: 800;
-     line-height: 40px;
-     letter-spacing: 0%;
-     text-align: left;
- }
+     .newslater_banner .newslater_main .news_subs .news_input .btn {
+         border-radius: 8px;
+         color: rgb(255, 255, 255);
+         font-family: Mulish;
+         font-size: 20px;
+         font-weight: 800;
+         line-height: 25px;
+         letter-spacing: 0%;
+         text-align: center;
+         background: rgb(255, 84, 0);
+         padding: 14px 0;
+         border: none;
+     }
 
 
+     .newslater_banner .newslater_main .news_img .discount {
+         position: absolute;
+         transform: rotate(-19.63deg);
+         border-radius: 16px;
+         background: rgb(255, 84, 0);
+         z-index: 11;
+         padding: 20px 30px;
+         right: 6px;
+         bottom: 50px;
+     }
+
+     .newslater_banner .newslater_main .news_img .discount p {
+         color: rgb(255, 255, 255);
+         font-family: Mulish;
+         font-size: 24px;
+         font-weight: 400;
+         line-height: 30px;
+         letter-spacing: 0%;
+         text-align: center;
+     }
+
+     .newslater_banner .newslater_main .news_img .discount h3 {
+         color: rgb(255, 255, 255);
+         font-family: Mulish;
+         font-size: 32px;
+         font-weight: 800;
+         line-height: 40px;
+         letter-spacing: 0%;
+         text-align: left;
+     }
 
 
 
- /* =====
+
+
+     /* =====
 =====
 ====
 ==== Media query
 =====
 ========= */
 
- @media only screen and (max-width: 560px) {
-     .newslater_banner {
-         width: 90%;
-         margin: 50px auto;
+     @media only screen and (max-width: 560px) {
+         .newslater_banner {
+             width: 90%;
+             margin: 50px auto;
+         }
+
+         .newslater_banner .newslater_main {
+             display: flex;
+             flex-direction: column;
+             position: relative;
+             z-index: 1;
+             gap: 40px;
+         }
+
+         .text span {
+             display: block;
+         }
+
+         .newslater_banner .newslater_main .news_img img {
+             width: 100%;
+             max-width: 550px;
+             margin: 0 auto;
+         }
+
+         .newslater_banner .newslater_main .news_img .discount {
+             position: absolute;
+             transform: rotate(-19.63deg);
+             border-radius: 10px;
+             background: rgb(255, 84, 0);
+             z-index: 11;
+             padding: 15px 25px;
+             right: 4px;
+             bottom: 36px;
+         }
      }
 
-     .newslater_banner .newslater_main {
-         display: flex;
-         flex-direction: column;
-         position: relative;
-         z-index: 1;
-         gap: 40px;
+     .newslater_banner .newslater_main .news_img .discount p {
+         font-size: 15.85px;
+         line-height: 20px;
      }
 
-     .text span {
-         display: block;
+     .newslater_banner .newslater_main .news_img .discount h3 {
+         font-size: 21.14px;
+         line-height: 27px;
+
      }
 
-     .newslater_banner .newslater_main .news_img img {
-         width: 100%;
-         max-width: 550px;
-         margin: 0 auto;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     footer {
+         background: rgba(19, 19, 24, 0.05);
      }
 
-     .newslater_banner .newslater_main .news_img .discount {
-         position: absolute;
-         transform: rotate(-19.63deg);
-         border-radius: 10px;
-         background: rgb(255, 84, 0);
-         z-index: 11;
-         padding: 15px 25px;
-         right: 4px;
-         bottom: 36px;
-     }
- }
-
- .newslater_banner .newslater_main .news_img .discount p {
-     font-size: 15.85px;
-     line-height: 20px;
- }
-
- .newslater_banner .newslater_main .news_img .discount h3 {
-     font-size: 21.14px;
-     line-height: 27px;
-
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- footer {
-     background: rgba(19, 19, 24, 0.05);
- }
-
- footer .hero_footer {
-     width: 80%;
-     max-width: 1200px;
-     margin: 0 auto;
-     padding: 110px 0px;
- }
-
- .foot-logo img {
-     width: 40px;
-     height: 45px;
- }
-
- .foot-logo h3 {
-     color: rgb(19, 19, 24);
-     font-family: Mulish;
-     font-size: 32px;
-     font-weight: 800;
-     line-height: 40px;
-     letter-spacing: 0%;
-     text-align: left;
-     /* margin: 0; */
- }
-
- .foot-logo h3 span {
-     color: rgb(255, 84, 0);
- }
-
- .hero_footer .foot-logo {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 20px;
- }
-
- .hero_footer .text {
-     color: rgb(90, 90, 93);
-     font-family: Mulish;
-     font-size: 16px;
-     font-weight: 400;
-     line-height: 26px;
-     letter-spacing: 0%;
-     text-align: center;
-     padding-top: 25px;
- }
-
- .copyright {
-     color: rgb(19, 19, 24);
-     font-family: Inter;
-     font-size: 16px;
-     font-weight: 300;
-     line-height: 19px;
-     letter-spacing: 0%;
-     text-align: center;
- }
-
- .footer_social {
-     text-align: center;
-     padding: 20px 0px 0 0;
- }
-
- footer hr {
-     border: 1px solid rgba(19, 19, 24, 0.1);
-     width: 75%;
-     margin: 35px auto;
- }
-
-
-
- @media only screen and (max-width: 560px) {
      footer .hero_footer {
-         width: 90%;
-         max-width: 560px;
+         width: 80%;
+         max-width: 1200px;
          margin: 0 auto;
-         padding: 40px 0px;
-     }
-
-     footer .hero_footer .foot-logo h3 {
-         font-size: 28.54px;
+         padding: 110px 0px;
      }
 
      .foot-logo img {
-         width: 25px;
-         height: auto;
+         width: 40px;
+         height: 45px;
+     }
+
+     .foot-logo h3 {
+         color: rgb(19, 19, 24);
+         font-family: Mulish;
+         font-size: 32px;
+         font-weight: 800;
+         line-height: 40px;
+         letter-spacing: 0%;
+         text-align: left;
+         /* margin: 0; */
+     }
+
+     .foot-logo h3 span {
+         color: rgb(255, 84, 0);
+     }
+
+     .hero_footer .foot-logo {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 20px;
+     }
+
+     .hero_footer .text {
+         color: rgb(90, 90, 93);
+         font-family: Mulish;
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 26px;
+         letter-spacing: 0%;
+         text-align: center;
+         padding-top: 25px;
+     }
+
+     .copyright {
+         color: rgb(19, 19, 24);
+         font-family: Inter;
+         font-size: 16px;
+         font-weight: 300;
+         line-height: 19px;
+         letter-spacing: 0%;
+         text-align: center;
      }
 
      .footer_social {
-         display: flex;
-         justify-content: center;
-         gap: 25px;
          text-align: center;
          padding: 20px 0px 0 0;
      }
@@ -1179,6 +1277,39 @@ Newslater section
      footer hr {
          border: 1px solid rgba(19, 19, 24, 0.1);
          width: 75%;
-         margin: 20px auto;
+         margin: 35px auto;
      }
- }
+
+
+
+     @media only screen and (max-width: 560px) {
+         footer .hero_footer {
+             width: 90%;
+             max-width: 560px;
+             margin: 0 auto;
+             padding: 40px 0px;
+         }
+
+         footer .hero_footer .foot-logo h3 {
+             font-size: 28.54px;
+         }
+
+         .foot-logo img {
+             width: 25px;
+             height: auto;
+         }
+
+         .footer_social {
+             display: flex;
+             justify-content: center;
+             gap: 25px;
+             text-align: center;
+             padding: 20px 0px 0 0;
+         }
+
+         footer hr {
+             border: 1px solid rgba(19, 19, 24, 0.1);
+             width: 75%;
+             margin: 20px auto;
+         }
+     }
