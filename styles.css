@@ -160,7 +160,7 @@ banner section starts here
      text-align: center;
      padding-top: 24px;
      width: 80%;
-     max-width:600px ;
+     max-width: 600px;
      margin: auto;
  }
 
@@ -374,11 +374,170 @@ video section ends
  }
 
 
+ /* =====
+ ======
+ Destination starts
+ ========
+ ======
+ */
+
+
+ .destination {
+     width: 80%;
+     max-width: 1200px;
+     margin: 100px auto;
+ }
+
+ .destination .destination_text {
+     width: 60%;
+     max-width: 700px;
+     margin: 0 auto;
+ }
+
+ .destination .destination_text h2 {
+
+     color: rgb(19, 19, 24);
+     font-family: Mulish;
+     font-size: 40px;
+     font-weight: 800;
+     line-height: 50px;
+     letter-spacing: 0%;
+     text-align: center;
+     padding-bottom: 20px;
+ }
+
+ .destination .destination_text p {
+     color: rgba(19, 19, 24, 0.7);
+     font-family: Mulish;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+     letter-spacing: 0%;
+     text-align: center;
+ }
 
 
 
+ .destination .destination_photo .row_one,
+ .row_two,
+ .row_three {
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     margin-top: 20px;
+
+ }
+
+ .destination .destination_photo .row_one .middile {
+     position: relative;
+ }
+
+ .destination .destination_photo .row_one .middile p {
+     position: absolute;
+     top: 136px;
+     right: 221px;
+     text-align: center;
+     color: rgb(255, 255, 255);
+     font-family: Mulish;
+     font-size: 28px;
+     font-weight: 800;
+     line-height: 35px;
+     letter-spacing: 0%;
+
+ }
+
+ .destination .destination_photo .row_two .middile {
+     position: relative;
+ }
+
+ .destination .destination_photo .row_two .middile >.one {
+     position: absolute;
+     top: 136px;
+     right: 120px;
+     text-align: center;
+     color: rgb(255, 255, 255);
+     font-family: Mulish;
+     font-size: 28px;
+     font-weight: 800;
+     line-height: 35px;
+     letter-spacing: 0%;
+
+ }
+ .destination .destination_photo .row_two .middile >.two {
+     position: absolute;
+     top: 136px;
+     right: 140px;
+     text-align: center;
+     color: rgb(255, 255, 255);
+     font-family: Mulish;
+     font-size: 28px;
+     font-weight: 800;
+     line-height: 35px;
+     letter-spacing: 0%;
+
+ }
+ .destination .destination_photo .row_two .middile >.three {
+     position: absolute;
+     top: 136px;
+     right: 80px;
+     text-align: center;
+     color: rgb(255, 255, 255);
+     font-family: Mulish;
+     font-size: 28px;
+     font-weight: 800;
+     line-height: 35px;
+     letter-spacing: 0%;
+
+ }
+
+ .destination .destination_photo .row_three .middile {
+     position: relative;
+ }
 
 
+ /* .destination .destination_photo .row_three .middile  {
+     position: absolute;
+     top: 136px;
+     right: 221px;
+     text-align: center;
+     color: rgb(255, 255, 255);
+     font-family: Mulish;
+     font-size: 28px;
+     font-weight: 800;
+     line-height: 35px;
+     letter-spacing: 0%;
+
+ } */
+ .destination .destination_photo .row_three .middile .one p {
+     position: absolute;
+     top: 136px;
+     right: 150px;
+     text-align: center;
+     color: rgb(255, 255, 255);
+     font-family: Mulish;
+     font-size: 28px;
+     font-weight: 800;
+     line-height: 35px;
+     letter-spacing: 0%;
+
+ }
+
+
+ /* .destination .destination_photo .row_three .middile p {
+     position: absolute;
+     top: 136px;
+     right: 221px;
+     text-align: center;
+     color: rgb(255, 255, 255);
+     font-family: Mulish;
+     font-size: 28px;
+     font-weight: 800;
+     line-height: 35px;
+     letter-spacing: 0%;
+
+ } */
 
  /* =====
  ======
@@ -557,7 +716,7 @@ video section ends
      .deals_discount .deals_info .deals_card .right {
          position: absolute;
          top: 215px;
-        left: 37px;
+         left: 37px;
      }
 
      .deals_discount .deals_info .deals_card .card_info {
@@ -584,14 +743,15 @@ video section ends
 
 
      }
-     .deals_discount .deals_info .deals_card  p span {
-        display: none;
+
+     .deals_discount .deals_info .deals_card p span {
+         display: none;
      }
 
      .deals_discount .deals_info .deals_card .left {
-        position: absolute;
-        top: 215px;
-        left: 37px;
+         position: absolute;
+         top: 215px;
+         left: 37px;
      }
 
      .deals_discount .deals_info .deals_card .card_info .card_text {
@@ -739,7 +899,7 @@ Newslater section
  .newslater_banner .newslater_main {
      display: flex;
      justify-content: space-between;
-     /* gap: 30px; */
+     gap: 30px;
      align-items: center;
      position: relative;
      z-index: 1;
@@ -865,6 +1025,10 @@ Newslater section
          gap: 40px;
      }
 
+     .text span {
+         display: block;
+     }
+
      .newslater_banner .newslater_main .news_img img {
          width: 100%;
          max-width: 550px;
@@ -872,27 +1036,28 @@ Newslater section
      }
 
      .newslater_banner .newslater_main .news_img .discount {
-        position: absolute;
-        transform: rotate(-19.63deg);
-        border-radius: 10px;
-        background: rgb(255, 84, 0);
-        z-index: 11;
-        padding: 15px 25px;
-        right: 4px;
-        bottom: 36px;
-    }
+         position: absolute;
+         transform: rotate(-19.63deg);
+         border-radius: 10px;
+         background: rgb(255, 84, 0);
+         z-index: 11;
+         padding: 15px 25px;
+         right: 4px;
+         bottom: 36px;
      }
+ }
 
-     .newslater_banner .newslater_main .news_img .discount p {
-        font-size: 15.85px;
-        line-height: 20px;
-     }
-     .newslater_banner .newslater_main .news_img .discount h3 {
-        font-size: 21.14px;
-        line-height: 27px;
-    
-    }
- 
+ .newslater_banner .newslater_main .news_img .discount p {
+     font-size: 15.85px;
+     line-height: 20px;
+ }
+
+ .newslater_banner .newslater_main .news_img .discount h3 {
+     font-size: 21.14px;
+     line-height: 27px;
+
+ }
+
 
 
 
@@ -1002,14 +1167,15 @@ Newslater section
          width: 25px;
          height: auto;
      }
+
      .footer_social {
-        display: flex;
-        justify-content: center;
-        gap: 25px;
-        text-align: center;
-        padding: 20px 0px 0 0;
-    }
-   
+         display: flex;
+         justify-content: center;
+         gap: 25px;
+         text-align: center;
+         padding: 20px 0px 0 0;
+     }
+
      footer hr {
          border: 1px solid rgba(19, 19, 24, 0.1);
          width: 75%;
