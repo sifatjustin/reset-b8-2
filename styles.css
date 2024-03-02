@@ -60,6 +60,10 @@
      list-style: none;
  }
 
+ nav .nav-items .bar {
+     display: none;
+ }
+
  nav .nav-items ul li a {
      text-decoration: none;
      color: rgb(66, 66, 71);
@@ -98,11 +102,10 @@
          width: 90%;
          margin: 50px auto;
          display: flex;
-         flex-direction: column;
      }
 
      nav .nav-items ul {
-         display: flex;
+         display: none;
          flex-direction: column;
          gap: 10px;
          padding-top: 20px;
@@ -113,6 +116,10 @@
          font-size: 26px;
          font-weight: 800;
          line-height: 35px;
+     }
+
+     nav .nav-items .bar {
+         display: block;
      }
  }
 
@@ -850,12 +857,13 @@ Choose us  starts
          flex-direction: column;
          gap: 20px;
      }
+
      .choose_us .choose_cards .lone {
-        padding: 30px;
-        width: 100%;
-        margin: 20px auto;
-   
-    }
+         padding: 30px;
+         width: 100%;
+         margin: 20px auto;
+
+     }
  }
 
  /* =====
