@@ -670,6 +670,193 @@ video section ends
  }
 
 
+ /* =====
+ ======
+Choose us  starts
+ ========
+ ======
+ */
+
+ .chose_banner {
+     width: 80%;
+     max-width: 1200px;
+     margin: 100px auto;
+ }
+
+
+ .choose_us .choose_text h2 {
+     color: rgb(19, 19, 24);
+     font-family: Mulish;
+     font-size: 40px;
+     font-weight: 800;
+     line-height: 50px;
+     letter-spacing: 0%;
+     text-align: center;
+
+ }
+
+ .choose_us .choose_text p {
+     color: rgba(19, 19, 24, 0.7);
+     font-family: Mulish;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+     letter-spacing: 0%;
+     text-align: center;
+     width: 60%;
+     max-width: 700px;
+     margin: 20px auto;
+
+ }
+
+ .choose_us .choose_cards .card {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 20px;
+ }
+
+ .choose_us .choose_cards .card .one {
+     box-sizing: border-box;
+     border: 1px solid rgba(251, 181, 99, 0.2);
+     border-radius: 16px;
+     background: rgba(251, 181, 99, 0.05);
+     padding: 30px;
+
+ }
+
+ .choose_us .choose_cards .card .two {
+     box-sizing: border-box;
+     border: 1px solid rgba(41, 206, 246, 0.2);
+     border-radius: 16px;
+
+     background: rgba(41, 206, 246, 0.05);
+     padding: 30px;
+
+ }
+
+ .choose_us .choose_cards .lone {
+     box-sizing: border-box;
+     border: 1px solid rgba(233, 68, 68, 0.2);
+     border-radius: 16px;
+     background: rgba(233, 68, 68, 0.05);
+     padding: 30px;
+     width: 50%;
+     max-width: 600px;
+     display: flex;
+     justify-content: start;
+     align-items: center;
+     flex-direction: column;
+     margin: 20px auto;
+
+ }
+
+ .choose_us .choose_cards .lone .three h3 {
+     color: rgb(19, 19, 24);
+     font-family: Mulish;
+     font-size: 24px;
+     font-weight: 800;
+     line-height: 30px;
+     letter-spacing: 0%;
+     text-align: start;
+     margin-top: 15px;
+ }
+
+ .choose_us .choose_cards .card .one h3 {
+     color: rgb(19, 19, 24);
+     font-family: Mulish;
+     font-size: 24px;
+     font-weight: 800;
+     line-height: 30px;
+     letter-spacing: 0%;
+     text-align: start;
+     margin-top: 15px;
+ }
+
+ .choose_us .choose_cards .card .two h3 {
+     color: rgb(19, 19, 24);
+     font-family: Mulish;
+     font-size: 24px;
+     font-weight: 800;
+     line-height: 30px;
+     letter-spacing: 0%;
+     text-align: start;
+     margin-top: 15px;
+ }
+
+ .choose_us .choose_cards .lone .three p {
+     color: rgb(90, 90, 93);
+     font-family: Mulish;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+     letter-spacing: 0%;
+     text-align: start;
+     margin-top: 15px;
+ }
+
+ .choose_us .choose_cards .card .one p {
+     color: rgb(90, 90, 93);
+     font-family: Mulish;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+     letter-spacing: 0%;
+     text-align: start;
+     margin-top: 15px;
+ }
+
+ .choose_us .choose_cards .card .two p {
+     color: rgb(90, 90, 93);
+     font-family: Mulish;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+     letter-spacing: 0%;
+     text-align: start;
+     margin-top: 15px;
+ }
+
+
+ /* =====
+=====
+====
+==== Media query
+=====
+========= */
+
+ @media only screen and (max-width: 560px) {
+     .chose_banner {
+         width: 90%;
+         margin: 50px auto;
+     }
+
+     .choose_us .choose_text h2 {
+         font-size: 26px;
+         line-height: 20px;
+
+     }
+
+     .choose_us .choose_text p {
+
+         font-size: 14px;
+         line-height: 20px;
+         width: 80%;
+         margin: 20px auto;
+
+     }
+
+     .choose_us .choose_cards .card {
+         flex-direction: column;
+         gap: 20px;
+     }
+     .choose_us .choose_cards .lone {
+        padding: 30px;
+        width: 100%;
+        margin: 20px auto;
+   
+    }
+ }
 
  /* =====
  ======
@@ -728,7 +915,6 @@ video section ends
      border-radius: 16px;
      backdrop-filter: blur(5px);
      background: rgba(255, 255, 255, 0.8);
-
      width: 60%;
      max-width: 580px;
      padding: 50px;
@@ -771,7 +957,6 @@ video section ends
      line-height: 25px;
      letter-spacing: 0%;
      text-align: left;
-     /* padding-bottom: 10px; */
  }
 
  .deals_discount .deals_info .deals_card .card_info {
